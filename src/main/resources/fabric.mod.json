@@ -1,0 +1,60 @@
+{
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/66rV5hanFP"
+			},
+			"parent": {
+				"id": "zoom-o-matic",
+				"name": "Zoom-o-Matic"
+			},
+			"update_checker": false
+		}
+	},
+	"schemaVersion": 1,
+	"id": "zoom-o-matic",
+	"version": "${version}",
+	"name": "Zoom-o-Matic",
+	"description": "A simple, but customizable multi-button zoom tool for Minecraft.",
+	"contact": {
+		"sources": "https://github.com/NicoIsLost/Zoom-o-Matic",
+		"issues": "https://github.com/NicoIsLost/Zoom-o-Matic/issues",
+		"discord": "https://discord.gg/66rV5hanFP"
+	},
+	"authors": [
+		{
+			"name": "Nico Is LOST",
+			"contact": {
+				"email:": "contact@nicoislost.com"
+			}
+		}
+	],
+	"contributors": [
+		{
+			"name": "Fej1Fun"
+		}
+	],
+	"license": "MIT License",
+	"icon": "assets/zoom-o-matic/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.nicoislost.ZoomO"
+		]
+	},
+	"mixins": [
+		{
+			"config": "zoom-o-matic.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"minecraft": ">=1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"owo": "0.10.3"
+	}
+}
