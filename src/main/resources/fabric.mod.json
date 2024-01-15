@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "etc",
+  "version": "${version}",
+  "name": "lod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/kisil/lod"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.lod.etc.LodClient"
+    ],
+    "main": [
+      "org.lod.etc.Lod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
